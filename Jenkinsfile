@@ -3,8 +3,8 @@ pipeline{
     stages {
         stage ('index') {
             steps {
-                sh "cp /go/index.html ${WORKSPACE}"
-                archiveArtifacts "index.html"
+                sh "cp /go/index.jsp ${WORKSPACE}"
+                archiveArtifacts "index.jsp"
             }
         }
 	}
